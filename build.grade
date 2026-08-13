@@ -1,26 +1,7 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.application' version '7.4.2' apply false
 }
 
-android {
-    namespace 'com.barbershopbylex.lealtad'
-    compileSdk 33
-
-    defaultConfig {
-        applicationId "com.barbershopbylex.lealtad"
-        minSdk 24
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-        }
-    }
-}
-
-dependencies {
-    implementation 'androidx.appcompat:appcompat:1.6.1'
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
