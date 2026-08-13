@@ -1,0 +1,2 @@
+rootProject.name = "lex-lealtad-android"
+include ':app'
